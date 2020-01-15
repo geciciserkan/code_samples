@@ -2,9 +2,6 @@
 using Microsoft.Extensions.Configuration;
 using SampleWebApiAspNetCore.Entities;
 using SampleWebApiAspNetCore.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Dynamic;
 
 namespace SampleWebApiAspNetCore.v2.Controllers
 {
@@ -12,7 +9,6 @@ namespace SampleWebApiAspNetCore.v2.Controllers
     [Route("api/")]
     public class WebappdataController : ControllerBase
     {
-
         private readonly IWebAppDataRepository webAppDataRepository;
         public WebappdataController(IConfiguration configuration)
         {

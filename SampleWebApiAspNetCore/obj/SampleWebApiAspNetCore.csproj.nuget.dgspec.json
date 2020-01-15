@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\serka\\Desktop\\ASPNETCore-WebAPI-Sample-master\\ASPNETCore-WebAPI-Sample-master\\SampleWebApiAspNetCore\\SampleWebApiAspNetCore.csproj": {}
+    "C:\\Users\\serka\\OneDrive\\Belgeler\\GitHub\\code_samples\\SampleWebApiAspNetCore\\SampleWebApiAspNetCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\serka\\Desktop\\ASPNETCore-WebAPI-Sample-master\\ASPNETCore-WebAPI-Sample-master\\SampleWebApiAspNetCore\\SampleWebApiAspNetCore.csproj": {
+    "C:\\Users\\serka\\OneDrive\\Belgeler\\GitHub\\code_samples\\SampleWebApiAspNetCore\\SampleWebApiAspNetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\serka\\Desktop\\ASPNETCore-WebAPI-Sample-master\\ASPNETCore-WebAPI-Sample-master\\SampleWebApiAspNetCore\\SampleWebApiAspNetCore.csproj",
+        "projectUniqueName": "C:\\Users\\serka\\OneDrive\\Belgeler\\GitHub\\code_samples\\SampleWebApiAspNetCore\\SampleWebApiAspNetCore.csproj",
         "projectName": "SampleWebApiAspNetCore",
-        "projectPath": "C:\\Users\\serka\\Desktop\\ASPNETCore-WebAPI-Sample-master\\ASPNETCore-WebAPI-Sample-master\\SampleWebApiAspNetCore\\SampleWebApiAspNetCore.csproj",
+        "projectPath": "C:\\Users\\serka\\OneDrive\\Belgeler\\GitHub\\code_samples\\SampleWebApiAspNetCore\\SampleWebApiAspNetCore.csproj",
         "packagesPath": "C:\\Users\\serka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\serka\\Desktop\\ASPNETCore-WebAPI-Sample-master\\ASPNETCore-WebAPI-Sample-master\\SampleWebApiAspNetCore\\obj\\",
+        "outputPath": "C:\\Users\\serka\\OneDrive\\Belgeler\\GitHub\\code_samples\\SampleWebApiAspNetCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
