@@ -29,7 +29,7 @@ namespace Test
         }
     }
 
-    public class Tests
+    public class WebAppDataRepositoryTest
     {
 
         WebappdataController _controller;
