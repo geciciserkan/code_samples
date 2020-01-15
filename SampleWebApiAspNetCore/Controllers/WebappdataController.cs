@@ -9,18 +9,16 @@ namespace SampleWebApiAspNetCore.v2.Controllers
     [Route("api/")]
     public class WebappdataController : ControllerBase
     {
-        private readonly IWebAppDataRepository webAppDataRepository;
-        public WebappdataController(IConfiguration configuration)
+        private readonly IWebAppDataRepository _webAppDataRepository;
+        public WebappdataController(IWebAppDataRepository webAppDataRepository)
         {
-            webAppDataRepository = new WebAppDataRepository(configuration);
+            _webAppDataRepository = webAppDataRepository;
         }
 
-
-        [HttpGet]
-        [HttpPatch("webappdata/{guid}", Name = nameof(GetData))]
+        [HttpGet("webappdata/{guid}", Name = nameof(GetData))]
         public ActionResult GetData(string guid = null)
         {
-            var data = webAppDataRepository.Get(guid);
+            var data = _webAppDataRepository.Get(guid);
             if (data == null)
             {
                 return NotFound();
@@ -29,15 +27,13 @@ namespace SampleWebApiAspNetCore.v2.Controllers
         }
 
 
-        [HttpPut]
-        [HttpPatch("webappdata2/{guid2}", Name = nameof(SetData))]
-        public ActionResult SetData([FromBody] WebAppDataEntity body, string guid2 = null)
+        [HttpPut("webappdata/{guid}", Name = nameof(SetData))]
+        public ActionResult SetData([FromBody] WebAppDataEntity body, string guid = null)
         {
-            body.guid = guid2;
-            webAppDataRepository.Set(body);
+            body.guid = guid;
+            _webAppDataRepository.Set(body);
             return Ok("Saved");
         }
-
 
     }
 }

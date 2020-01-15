@@ -46,9 +46,8 @@ namespace SampleWebApiAspNetCore
 
 
 
-            services.AddSingleton<IWebAppDataRepository, WebAppDataRepository>();
 
-
+            services.Add(new ServiceDescriptor(typeof(IWebAppDataRepository), typeof(WebAppDataRepository), ServiceLifetime.Transient));
 
             services.AddRouting(options => options.LowercaseUrls = true);
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();

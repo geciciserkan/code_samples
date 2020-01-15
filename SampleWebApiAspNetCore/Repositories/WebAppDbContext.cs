@@ -100,8 +100,10 @@ namespace SampleWebApiAspNetCore.Repositories
             StringBuilder stringBuild = new StringBuilder();
             foreach (var item in userData)
             {
-                stringBuild.Append(item.Key + ":" + item.Value.ToString() + "-");
-
+                if (item.Key.Length > 0)
+                {
+                    stringBuild.Append(item.Key + ":" + item.Value.ToString() + "-");
+                }
             }
             var result = stringBuild.ToString();
             return result.Length > 0 ? result.TrimEnd('-') : string.Empty;
@@ -110,11 +112,15 @@ namespace SampleWebApiAspNetCore.Repositories
         Dictionary<string, object> ConverToDict(string userData)
         {
             var tempDict = new Dictionary<string, object>();
-            var dict = userData.ToString().Split("-");
+            var dict = userData.Trim().Split('-');
             foreach (var item in dict)
             {
                 var arr = item.Split(":");
-                tempDict.Add(arr[0], Convert.ToInt32(arr[1]));
+                if (arr[0].Length > 0)
+                {
+                    tempDict.Add(arr[0], Convert.ToInt32(arr[1]));
+
+                }
             }
             return tempDict;
         }
