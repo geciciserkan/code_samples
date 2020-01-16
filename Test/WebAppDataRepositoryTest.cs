@@ -41,7 +41,7 @@ namespace Test
         public void Setup()
         {
             var _configuration = new Mock<IConfiguration>();
-            _configuration.SetupGet(x => x[It.Is<string>(s => s == "ConnectionStrings:DefaultConnection")]).Returns("data source=mssql11.turhost.com;initial catalog=AllSocialP;user id=AllSocial_temp;password=AllSocial27!!;MultipleActiveResultSets=True;");
+            _configuration.SetupGet(x => x[It.Is<string>(s => s == "ConnectionStrings:DefaultConnection")]).Returns("data source=****;initial catalog=****;user id=AllSocial_temp;password=****;MultipleActiveResultSets=True;");
             configuration = _configuration.Object;
             _myInterface = new WebAppDataRepository(configuration);
             _controller = new WebappdataController(_myInterface);
